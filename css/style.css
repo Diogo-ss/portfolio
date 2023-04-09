@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #7c33ff, #ff7373);
+  font-family: 'Google Sans', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 200px;
+}
+
+p {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Google Sans', sans-serif;
+  margin-top: 20px;
+}
+
+.social-button {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.social-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  filter: blur(9px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.social-button:hover::before {
+  opacity: 0.4;
+}
+
+.social-button i {
+  color: #fff;
+  font-size: 36px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.social-button:hover i {
+  color: #fff;
+}
+
