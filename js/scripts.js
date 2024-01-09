@@ -3,7 +3,7 @@ let consecutiveClicks = 0;
 function openLink() {
   consecutiveClicks++;
   if (consecutiveClicks === 5) {
-    window.open("https://www.bibliacatolica.com.br/biblia-ave-maria/sao-joao/1/", "_blank");
+    window.open("https://www.paulus.com.br/biblia-pastoral/_PX6.HTM", "_blank");
     consecutiveClicks = 0;
   }
 }
