@@ -34,20 +34,20 @@ body {
   transition:
     color 0.3s,
     text-shadow 0.3s;
-  border-radius: 50%; /* Arredonda o botão */
-  overflow: hidden; /* Esconde o excedente do ícone arredondado */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .social-button:hover {
-  text-shadow: none; /* Remove o efeito de brilho ao passar o mouse */
+  text-shadow: none;
 }
 
 .social-button i {
-  padding: 10px; /* Espaçamento interno para garantir bordas arredondadas */
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo com transparência */
-  border-radius: 50%; /* Arredonda o ícone */
-  backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque */
-  transition: background-color 0.3s; /* Transição suave para o fundo desfocado */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s;
 }
 
 .social-button:hover i {
@@ -56,7 +56,7 @@ body {
     255,
     255,
     0.05
-  ); /* Reduz a opacidade ao passar o mouse */
+  );
 }
 
 .quote-box {
@@ -65,9 +65,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo com transparência */
-  backdrop-filter: blur(8px); /* Efeito de desfoque */
-  border-radius: 20px; /* Borda arredondada */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
   text-align: center;
   font-size: 1.2rem;
   z-index: 2;
@@ -76,6 +76,23 @@ body {
 .quote {
   margin: 0;
   color: white;
+  user-select: none;
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(254, 255, 255, 0.7);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.quote-clicked {
+  animation: shine 0.5s linear;
 }
 
 .video-background {
