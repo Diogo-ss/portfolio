@@ -2,7 +2,7 @@ let consecutiveClicks = 0;
 
 function openLink() {
   consecutiveClicks++;
-  if (consecutiveClicks === 5) {
+  if (consecutiveClicks === 3) {
     window.open("https://www.paulus.com.br/biblia-pastoral/_PX6.HTM", "_blank");
     consecutiveClicks = 0;
   }
