@@ -3,8 +3,8 @@ let consecutiveClicks = 0;
 function openLink() {
   consecutiveClicks++;
   if (consecutiveClicks === 5) {
-    window.open("https://www.google.com", "_blank");
-    consecutiveClicks = 0; // Reseta o contador após abrir a nova aba
+    window.open("https://www.bibliacatolica.com.br/biblia-ave-maria/sao-joao/1/", "_blank");
+    consecutiveClicks = 0;
   }
 }
 
